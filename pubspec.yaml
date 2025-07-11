@@ -1,0 +1,40 @@
+name: flutter_application_2
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^0.13.6
+  cupertino_icons: ^1.0.8
+  flutter_secure_storage: ^9.0.0
+  dio: ^5.4.0
+  image_picker: ^1.0.4
+  flutter_native_splash: ^2.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/default_profile.jpg
+    - assets/default_white.png
+    - assets/splash.png
+  fonts:
+    - family: NanumSquareNeo
+      fonts:
+        - asset: assets/fonts/NanumSquareNeo-dEb.ttf
+
+flutter_native_splash:
+  color: "#E66161"
+  image: assets/splash.png
+  android_gravity: center
+  ios_content_mode: center
